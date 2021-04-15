@@ -13,6 +13,7 @@
 		04D621F62628CEB900D04858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D621F42628CEB900D04858 /* Main.storyboard */; };
 		04D621F82628CEBA00D04858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D621F72628CEBA00D04858 /* Assets.xcassets */; };
 		04D621FB2628CEBA00D04858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D621F92628CEBA00D04858 /* LaunchScreen.storyboard */; };
+		0A01297A2628DEBC00D3FD85 /* ListOfCompletedTasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0129792628DEBC00D3FD85 /* ListOfCompletedTasks.storyboard */; };
 		FA2EE9162628D90000526A72 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2EE9152628D90000526A72 /* CreateTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		04D621F72628CEBA00D04858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D621FA2628CEBA00D04858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D621FC2628CEBA00D04858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A0129792628DEBC00D3FD85 /* ListOfCompletedTasks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListOfCompletedTasks.storyboard; sourceTree = "<group>"; };
 		FA2EE9152628D90000526A72 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 				04D621EE2628CEB900D04858 /* AppDelegate.swift */,
 				04D621F02628CEB900D04858 /* SceneDelegate.swift */,
 				04D621F22628CEB900D04858 /* ViewController.swift */,
+				0A0129792628DEBC00D3FD85 /* ListOfCompletedTasks.storyboard */,
 				04D621F42628CEB900D04858 /* Main.storyboard */,
 				04D621F72628CEBA00D04858 /* Assets.xcassets */,
 				04D621F92628CEBA00D04858 /* LaunchScreen.storyboard */,
@@ -129,6 +132,7 @@
 			files = (
 				04D621FB2628CEBA00D04858 /* LaunchScreen.storyboard in Resources */,
 				04D621F82628CEBA00D04858 /* Assets.xcassets in Resources */,
+				0A01297A2628DEBC00D3FD85 /* ListOfCompletedTasks.storyboard in Resources */,
 				04D621F62628CEB900D04858 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
