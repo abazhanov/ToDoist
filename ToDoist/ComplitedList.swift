@@ -16,6 +16,7 @@ extension ComplitedList {
         [
             ComplitedList(list: "Walk"),
             ComplitedList(list: "Eat"),
+            ComplitedList(list: "Eat"),
             ComplitedList(list: "Buy")
         ]
     }
