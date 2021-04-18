@@ -42,7 +42,6 @@
 		04D621E22628CEB900D04858 = {
 			isa = PBXGroup;
 			children = (
-				FA2EE9152628D90000526A72 /* CreateTaskViewController.swift */,
 				04D621ED2628CEB900D04858 /* ToDoist */,
 				04D621EC2628CEB900D04858 /* Products */,
 			);
@@ -59,6 +58,7 @@
 		04D621ED2628CEB900D04858 /* ToDoist */ = {
 			isa = PBXGroup;
 			children = (
+				FA2EE9152628D90000526A72 /* CreateTaskViewController.swift */,
 				04D621EE2628CEB900D04858 /* AppDelegate.swift */,
 				04D621F02628CEB900D04858 /* SceneDelegate.swift */,
 				04D621F22628CEB900D04858 /* ViewController.swift */,
