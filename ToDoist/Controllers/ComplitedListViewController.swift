@@ -9,7 +9,7 @@ import UIKit
 
 class ComplitedListViewController: UITableViewController {
     
-    var list = ComplitedList.getCompList()
+//    var list = ComplitedList.getCompList()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,16 +21,17 @@ class ComplitedListViewController: UITableViewController {
 //    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        list.count
+//        list.count
+        2
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let compList = list[indexPath.row]
-        
-        var content = cell.defaultContentConfiguration()
-        content.text = compList.list
-        cell.contentConfiguration = content
+////        let compList = list[indexPath.row]
+//
+//        var content = cell.defaultContentConfiguration()
+//        content.text = compList.list
+//        cell.contentConfiguration = content
         
         return cell
     }
