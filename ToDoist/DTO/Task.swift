@@ -15,6 +15,7 @@
 import Foundation
 
 struct Task {
+    let id: UUID = UUID()
     let name: String
     let description: String
     let estimateDate: Date
