@@ -16,6 +16,9 @@
 		0A01297A2628DEBC00D3FD85 /* ListOfCompletedTasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0129792628DEBC00D3FD85 /* ListOfCompletedTasks.storyboard */; };
 		0A2A169426295C6C00CC1E91 /* ComplitedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A169326295C6C00CC1E91 /* ComplitedListViewController.swift */; };
 		0A2A169726295CF800CC1E91 /* ComplitedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A169626295CF800CC1E91 /* ComplitedList.swift */; };
+		0AE56457262E0EF30026767C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE56456262E0EF30026767C /* Task.swift */; };
+		0AE5645B262E0F0E0026767C /* TaskDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5645A262E0F0E0026767C /* TaskDataManager.swift */; };
+		0AE5645E262E0F490026767C /* TaskDataManagerlmpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5645D262E0F490026767C /* TaskDataManagerlmpl.swift */; };
 		FA2EE9162628D90000526A72 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2EE9152628D90000526A72 /* CreateTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,9 @@
 		0A0129792628DEBC00D3FD85 /* ListOfCompletedTasks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListOfCompletedTasks.storyboard; sourceTree = "<group>"; };
 		0A2A169326295C6C00CC1E91 /* ComplitedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplitedListViewController.swift; sourceTree = "<group>"; };
 		0A2A169626295CF800CC1E91 /* ComplitedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplitedList.swift; sourceTree = "<group>"; };
+		0AE56456262E0EF30026767C /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		0AE5645A262E0F0E0026767C /* TaskDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataManager.swift; sourceTree = "<group>"; };
+		0AE5645D262E0F490026767C /* TaskDataManagerlmpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataManagerlmpl.swift; sourceTree = "<group>"; };
 		FA2EE9152628D90000526A72 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +71,7 @@
 		04D621ED2628CEB900D04858 /* ToDoist */ = {
 			isa = PBXGroup;
 			children = (
+				0AE56454262E0E860026767C /* DTO */,
 				04D621EE2628CEB900D04858 /* AppDelegate.swift */,
 				04D621F02628CEB900D04858 /* SceneDelegate.swift */,
 				04D621F22628CEB900D04858 /* ViewController.swift */,
@@ -77,6 +84,16 @@
 				04D621FC2628CEBA00D04858 /* Info.plist */,
 			);
 			path = ToDoist;
+			sourceTree = "<group>";
+		};
+		0AE56454262E0E860026767C /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				0AE56456262E0EF30026767C /* Task.swift */,
+				0AE5645A262E0F0E0026767C /* TaskDataManager.swift */,
+				0AE5645D262E0F490026767C /* TaskDataManagerlmpl.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,11 +167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE5645B262E0F0E0026767C /* TaskDataManager.swift in Sources */,
 				04D621F32628CEB900D04858 /* ViewController.swift in Sources */,
 				04D621EF2628CEB900D04858 /* AppDelegate.swift in Sources */,
 				04D621F12628CEB900D04858 /* SceneDelegate.swift in Sources */,
 				FA2EE9162628D90000526A72 /* CreateTaskViewController.swift in Sources */,
+				0AE5645E262E0F490026767C /* TaskDataManagerlmpl.swift in Sources */,
 				0A2A169426295C6C00CC1E91 /* ComplitedListViewController.swift in Sources */,
+				0AE56457262E0EF30026767C /* Task.swift in Sources */,
 				0A2A169726295CF800CC1E91 /* ComplitedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
