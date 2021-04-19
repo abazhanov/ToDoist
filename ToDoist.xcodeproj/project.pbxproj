@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0426E6E8262DDC62005D60F3 /* HeaderSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0426E6E7262DDC62005D60F3 /* HeaderSectionView.swift */; };
 		0447425F262D8B74001F7386 /* TasksDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447425E262D8B74001F7386 /* TasksDashboardViewController.swift */; };
 		04ACDA6A26298F2800DFE58B /* TaskList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ACDA6926298F2800DFE58B /* TaskList.storyboard */; };
 		04B78F20262DABF400BF2D6C /* TaskCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B78F1F262DABF400BF2D6C /* TaskCollectionViewCell.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0426E6E7262DDC62005D60F3 /* HeaderSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSectionView.swift; sourceTree = "<group>"; };
 		0447425E262D8B74001F7386 /* TasksDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDashboardViewController.swift; sourceTree = "<group>"; };
 		04ACDA6926298F2800DFE58B /* TaskList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskList.storyboard; sourceTree = "<group>"; };
 		04B78F1F262DABF400BF2D6C /* TaskCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				04B78F1F262DABF400BF2D6C /* TaskCollectionViewCell.swift */,
+				0426E6E7262DDC62005D60F3 /* HeaderSectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				0447425F262D8B74001F7386 /* TasksDashboardViewController.swift in Sources */,
 				04B78F20262DABF400BF2D6C /* TaskCollectionViewCell.swift in Sources */,
 				04D622052628D5A500D04858 /* Task.swift in Sources */,
+				0426E6E8262DDC62005D60F3 /* HeaderSectionView.swift in Sources */,
 				04D621F32628CEB900D04858 /* ViewController.swift in Sources */,
 				04FF8E5B262D980E004585A5 /* TaskDataManager.swift in Sources */,
 				04D621EF2628CEB900D04858 /* AppDelegate.swift in Sources */,

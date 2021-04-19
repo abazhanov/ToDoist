@@ -8,21 +8,27 @@
 class TaskDataManagerImpl: TaskDataManager {
     static let shared = TaskDataManagerImpl()
 
-    private var tasks: [Task] = []
+    private var tasks: [ImportantStatus: [Task]] = [:]
 
     func insertTask(task: Task) {
-        tasks.append(task)
+        tasks[task.importantStatus]?.append(task)
     }
 
     func deleteTask(task: Task) {
-        tasks.removeAll { $0.id == task.id }
+        tasks[task.importantStatus]?.removeAll { $0.id == task.id }
     }
 
     func getTask(task: Task) -> Task? {
-        tasks.filter{ $0.id == task.id }.first
+        tasks[task.importantStatus]?.filter{ $0.id == task.id }.first
     }
     
     func getTotalCount() -> Int {
-        tasks.count
+        var totalCount = 0
+        
+        tasks.forEach{
+            totalCount += $0.value.count
+        }
+        
+        return totalCount
     }
 }

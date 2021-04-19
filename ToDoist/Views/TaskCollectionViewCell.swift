@@ -8,5 +8,9 @@
 import UIKit
 
 class TaskCollectionViewCell: UICollectionViewCell {
-    
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var estimateLabel: UILabel!
+    @IBOutlet weak var openButton: UIButton!
+    @IBOutlet weak var backView: UIView!
 }
