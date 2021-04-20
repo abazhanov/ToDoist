@@ -30,7 +30,7 @@
                             <outlet property="delegate" destination="4Bf-4l-ghJ" id="ejs-9o-2tX"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="yTT-Ex-iUA"/>
+                    <tabBarItem key="tabBarItem" title="Complited Task" image="checkmark.seal" catalog="system" id="yTT-Ex-iUA"/>
                     <navigationItem key="navigationItem" title="Complited List" id="JYt-2r-C0w"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WfV-I3-UTm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -41,8 +41,8 @@
         <scene sceneID="dvR-HB-Lnu">
             <objects>
                 <navigationController storyboardIdentifier="CompletedList" id="hQP-ij-mNk" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yxL-WA-kN6">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="yxL-WA-kN6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -53,13 +53,14 @@
             </objects>
             <point key="canvasLocation" x="-2019" y="323"/>
         </scene>
-        <!--List-->
+        <!--Завершенные задачи-->
         <scene sceneID="o1e-wV-RKO">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aD7-vZ-Sfa" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="List" id="9hJ-pl-bVI"/>
+                    <navigationItem key="navigationItem" title="Завершенные задачи" id="9hJ-pl-bVI"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Kv-jT-dy5">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -73,6 +74,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checkmark.seal" catalog="system" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
