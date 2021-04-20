@@ -8,7 +8,7 @@
 class TaskDataManagerImpl: TaskDataManager {
     static let shared = TaskDataManagerImpl()
 
-    private var tasks: [ImportantStatus: [Task]] = [:]
+    var tasks: [ImportantStatus: [Task]] = [:]
 
     func insertTask(task: Task) {
         tasks[task.importantStatus]?.append(task)
