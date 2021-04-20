@@ -9,31 +9,41 @@ import UIKit
 
 class ComplitedListViewController: UITableViewController {
     
-//    var list = ComplitedList.getCompList()
-
+    var tasks = TaskDataManagerImpl.shared.staticTask
+    lazy var complitedTask = getTask()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        list.count
-        2
+        return complitedTask.count
+        
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-////        let compList = list[indexPath.row]
-//
-//        var content = cell.defaultContentConfiguration()
-//        content.text = compList.list
-//        cell.contentConfiguration = content
+        
+        let compList = complitedTask[indexPath.row]
+        var content = cell.defaultContentConfiguration()
+        content.text = compList.name
+        cell.contentConfiguration = content
         
         return cell
     }
 
+}
+
+extension ComplitedListViewController {
+    private func getTask() -> [Task] {
+        var newTasks: [Task] = []
+        for (_,values) in tasks {
+            for value in values {
+                if value.status == .done {
+                newTasks.append(value)
+                }
+            }
+        }
+        return newTasks
+    }
 }

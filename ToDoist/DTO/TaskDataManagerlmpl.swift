@@ -4,11 +4,27 @@
 //
 //  Created by Dmitry on 19.04.2021.
 //
+import Foundation
 
 class TaskDataManagerImpl: TaskDataManager {
     static let shared = TaskDataManagerImpl()
 
     private init(){}
+    
+   var staticTask: [ImportantStatus: [Task]] = [
+        .emergency: [
+            Task(name: "Buy milk", description: "Buy milk in nearest store", estimateDate: Date(), status: .done, importantStatus: .emergency),
+            Task(name: "Send email", description: "Send email for John", estimateDate: Date(), status: .undone, importantStatus: .emergency)
+        ],
+        .normal: [
+            Task(name: "Buy soda", description: "Buy soda in nearest store", estimateDate: Date(), status: .undone, importantStatus: .normal),
+            Task(name: "Call grandma", description: "Call grandma", estimateDate: Date(), status: .done, importantStatus: .normal),
+            Task(name: "Write an app", description: "With xcode", estimateDate: Date(), status: .undone, importantStatus: .normal)
+        ],
+        .low: [
+            Task(name: "Take a nap", description: "On this beautiful sofa", estimateDate: Date(), status: .undone, importantStatus: .normal),
+        ]
+    ]
     
     private var tasks: [ImportantStatus: [Task]] = [:]
 
