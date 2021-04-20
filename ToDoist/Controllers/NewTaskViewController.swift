@@ -16,11 +16,12 @@ class NewTaskViewController: UIViewController {
     @IBOutlet weak var normalImportant: UISwitch!
     @IBOutlet weak var emergencyImportant: UISwitch!
     
-    var delegate: TaskDataManagerImpl!
+    let dataManager = TaskDataManagerImpl.shared
+    
+    
     var statusImportant: ImportantStatus = .low
     
     @IBAction func statusImortant(_ sender: UISwitch) {
-        print(sender)
         switch sender {
         case lowImportant:
             if lowImportant.isOn {
@@ -59,7 +60,7 @@ class NewTaskViewController: UIViewController {
             return
         }
     
-        delegate.insertTask(task:
+        dataManager.insertTask(task:
             Task(
                 name: nameTaskTF.text!,
                 description: descriptionTaskTF.text ?? "",
