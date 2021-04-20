@@ -1,8 +1,15 @@
 //
+<<<<<<< HEAD
 //  Task.swift/Users/dmitry/Desktop/ToDoist/ToDoist/DTO/Task.swift
 //  ToDoist
 //
 //  Created by Dmitry on 19.04.2021.
+=======
+//  Task.swift
+//  ToDoist
+//
+//  Created by Artem Bazhanov on 19.04.2021.
+>>>>>>> 6e3f08e03e52c9d320e792296dec9c878e6eecf5
 //
 
 import Foundation
