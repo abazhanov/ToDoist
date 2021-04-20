@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3bi-Jo-Cyk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Создать-->
+        <scene sceneID="Qxd-fU-BUP">
+            <objects>
+                <viewController id="3bi-Jo-Cyk" customClass="NewTaskViewController" customModule="ToDoist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fTl-2c-mk4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="lDW-5l-xch">
+                                <rect key="frame" x="16" y="60" width="382" height="75"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Название задачи" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2md-GH-aEb">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Описание задачи" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eVb-x9-IHl">
+                                        <rect key="frame" x="0.0" y="48.5" width="382" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="KNH-aZ-ccw">
+                                <rect key="frame" x="16" y="185" width="382" height="149"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bhe-Jj-mr5">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Обычная задача" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1z-4Q-rFv">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Sz-q9-GLx">
+                                                <rect key="frame" x="333" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="statusImortant:" destination="3bi-Jo-Cyk" eventType="valueChanged" id="JFe-GL-e9I"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQa-7Y-yqd">
+                                        <rect key="frame" x="0.0" y="59" width="382" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Важная задача" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AX-Km-9To">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FPg-lk-eZx">
+                                                <rect key="frame" x="333" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="statusImortant:" destination="3bi-Jo-Cyk" eventType="valueChanged" id="HEq-n2-WOC"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dka-kd-s5t">
+                                        <rect key="frame" x="0.0" y="118" width="382" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Срочная задача" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b28-jW-AlD">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wct-cH-fiw">
+                                                <rect key="frame" x="333" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="statusImortant:" destination="3bi-Jo-Cyk" eventType="valueChanged" id="NgC-8J-nrX"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxP-Qx-z4j">
+                                <rect key="frame" x="177" y="384" width="60" height="30"/>
+                                <state key="normal" title="Создать"/>
+                                <connections>
+                                    <action selector="createPressed" destination="3bi-Jo-Cyk" eventType="touchUpInside" id="H7H-yY-47E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e0C-yP-8Qr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KNH-aZ-ccw" firstAttribute="top" secondItem="lDW-5l-xch" secondAttribute="bottom" constant="50" id="3eS-jc-wZR"/>
+                            <constraint firstItem="KNH-aZ-ccw" firstAttribute="leading" secondItem="e0C-yP-8Qr" secondAttribute="leading" constant="16" id="Jxi-Fq-Iwg"/>
+                            <constraint firstItem="lDW-5l-xch" firstAttribute="leading" secondItem="e0C-yP-8Qr" secondAttribute="leading" constant="16" id="QxV-N3-Cgr"/>
+                            <constraint firstItem="CxP-Qx-z4j" firstAttribute="centerX" secondItem="fTl-2c-mk4" secondAttribute="centerX" id="TKj-kN-7xG"/>
+                            <constraint firstItem="CxP-Qx-z4j" firstAttribute="top" secondItem="KNH-aZ-ccw" secondAttribute="bottom" constant="50" id="Tyh-QK-JB5"/>
+                            <constraint firstItem="e0C-yP-8Qr" firstAttribute="trailing" secondItem="KNH-aZ-ccw" secondAttribute="trailing" constant="16" id="ZID-4E-fNp"/>
+                            <constraint firstItem="e0C-yP-8Qr" firstAttribute="trailing" secondItem="lDW-5l-xch" secondAttribute="trailing" constant="16" id="dYO-87-udg"/>
+                            <constraint firstItem="lDW-5l-xch" firstAttribute="top" secondItem="e0C-yP-8Qr" secondAttribute="top" constant="16" id="rWS-Wq-wjV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Создать" id="mL7-At-7k6"/>
+                    <connections>
+                        <outlet property="descriptionTaskTF" destination="eVb-x9-IHl" id="KQg-0t-RIO"/>
+                        <outlet property="emergencyImportant" destination="Wct-cH-fiw" id="PjR-4E-qzr"/>
+                        <outlet property="lowImportant" destination="8Sz-q9-GLx" id="LbP-uT-e5x"/>
+                        <outlet property="nameTaskTF" destination="2md-GH-aEb" id="Ssm-a4-6hV"/>
+                        <outlet property="normalImportant" destination="FPg-lk-eZx" id="aWW-4B-ikh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3U-Eq-XwX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
