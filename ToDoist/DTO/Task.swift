@@ -2,7 +2,7 @@
 //  Task.swift
 //  ToDoist
 //
-//  Created by Artem Bazhanov on 19.04.2021.
+//  Created by Mac on 15.04.2021.
 //
 
 import Foundation
