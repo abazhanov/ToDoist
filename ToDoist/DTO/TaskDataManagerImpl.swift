@@ -1,14 +1,16 @@
 //
-//  TaskDataManagerImpl.swift
+//  TaskDataManager.swift
 //  ToDoist
 //
-//  Created by Artem Bazhanov on 19.04.2021.
+//  Created by Mac on 19.04.2021.
 //
 
 class TaskDataManagerImpl: TaskDataManager {
+    
     static let shared = TaskDataManagerImpl()
-
     private var tasks: [ImportantStatus: [Task]] = [:]
+    
+    private init() {}
 
     func insertTask(task: Task) {
         tasks[task.importantStatus]?.append(task)
@@ -30,5 +32,17 @@ class TaskDataManagerImpl: TaskDataManager {
         }
         
         return totalCount
+    }
+    
+    func getTask(by type: Status) -> [Task] {
+        var doneTasks = [Task]()
+                
+        for (_, task) in tasks{
+            doneTasks.append(contentsOf: task.filter{
+                $0.status == .done
+            })
+        }
+        
+        return doneTasks
     }
 }
