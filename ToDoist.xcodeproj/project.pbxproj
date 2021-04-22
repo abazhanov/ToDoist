@@ -17,6 +17,8 @@
 		04D621F62628CEB900D04858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D621F42628CEB900D04858 /* Main.storyboard */; };
 		04D621F82628CEBA00D04858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D621F72628CEBA00D04858 /* Assets.xcassets */; };
 		04D621FB2628CEBA00D04858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D621F92628CEBA00D04858 /* LaunchScreen.storyboard */; };
+		0A19BDAC2630925C00519D02 /* ComplitedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A19BDAB2630925C00519D02 /* ComplitedListViewController.swift */; };
+		0A19BDAF2630926C00519D02 /* ListOfCompletedTasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A19BDAE2630926B00519D02 /* ListOfCompletedTasks.storyboard */; };
 		1A54F777910A032BD7B659B8 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FF7D98C28BC5275B813F /* NewTaskViewController.swift */; };
 		1A54FAAA41FEBC3F71393D11 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 1A54F4063D2163EDA2866D4F /* .gitattributes */; };
 		FA97C960262E0DBA00F3B0E3 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97C95F262E0DBA00F3B0E3 /* Task.swift */; };
@@ -38,6 +40,8 @@
 		04D621F72628CEBA00D04858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D621FA2628CEBA00D04858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D621FC2628CEBA00D04858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A19BDAB2630925C00519D02 /* ComplitedListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplitedListViewController.swift; sourceTree = "<group>"; };
+		0A19BDAE2630926B00519D02 /* ListOfCompletedTasks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ListOfCompletedTasks.storyboard; path = ToDoist/Storyboards/ListOfCompletedTasks.storyboard; sourceTree = SOURCE_ROOT; };
 		1A54F4063D2163EDA2866D4F /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = file.gitattributes; path = .gitattributes; sourceTree = "<group>"; };
 		1A54FF7D98C28BC5275B813F /* NewTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
 		FA97C95F262E0DBA00F3B0E3 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 		04ACDA6626298EF000DFE58B /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				0A19BDAE2630926B00519D02 /* ListOfCompletedTasks.storyboard */,
 				04D621F42628CEB900D04858 /* Main.storyboard */,
 				FA97C969262E175100F3B0E3 /* NewTask.storyboard */,
 				04D621F92628CEBA00D04858 /* LaunchScreen.storyboard */,
@@ -80,6 +85,7 @@
 		04ACDA6826298F0800DFE58B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0A19BDAB2630925C00519D02 /* ComplitedListViewController.swift */,
 				0447425E262D8B74001F7386 /* TasksDashboardViewController.swift */,
 				1A54FF7D98C28BC5275B813F /* NewTaskViewController.swift */,
 			);
@@ -204,6 +210,7 @@
 			files = (
 				04D621FB2628CEBA00D04858 /* LaunchScreen.storyboard in Resources */,
 				0424432126302C1100EBD27A /* .gitignore in Resources */,
+				0A19BDAF2630926C00519D02 /* ListOfCompletedTasks.storyboard in Resources */,
 				04ACDA6A26298F2800DFE58B /* TaskList.storyboard in Resources */,
 				04D621F82628CEBA00D04858 /* Assets.xcassets in Resources */,
 				FA97C96A262E175100F3B0E3 /* NewTask.storyboard in Resources */,
@@ -225,6 +232,7 @@
 				04D621EF2628CEB900D04858 /* AppDelegate.swift in Sources */,
 				04D621F12628CEB900D04858 /* SceneDelegate.swift in Sources */,
 				FA97C967262E0E1500F3B0E3 /* TaskDataManagerImpl.swift in Sources */,
+				0A19BDAC2630925C00519D02 /* ComplitedListViewController.swift in Sources */,
 				FA97C960262E0DBA00F3B0E3 /* Task.swift in Sources */,
 				04D621F12628CEB900D04858 /* SceneDelegate.swift in Sources */,
 				FA97C964262E0DD900F3B0E3 /* TaskDataManager.swift in Sources */,
