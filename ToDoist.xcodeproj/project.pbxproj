@@ -20,6 +20,7 @@
 		0A19BDAF2630926C00519D02 /* ListOfCompletedTasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A19BDAE2630926B00519D02 /* ListOfCompletedTasks.storyboard */; };
 		1A54F777910A032BD7B659B8 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54FF7D98C28BC5275B813F /* NewTaskViewController.swift */; };
 		1A54FAAA41FEBC3F71393D11 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 1A54F4063D2163EDA2866D4F /* .gitattributes */; };
+		3A75AAFD26332D380024358A /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A75AAFC26332D380024358A /* AddUserViewController.swift */; };
 		3A826C1A2631AD23003AD208 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A826C192631AD23003AD208 /* Login.storyboard */; };
 		3A826C1D2631AD38003AD208 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A826C1C2631AD38003AD208 /* LoginViewController.swift */; };
 		FA97C960262E0DBA00F3B0E3 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97C95F262E0DBA00F3B0E3 /* Task.swift */; };
@@ -45,6 +46,7 @@
 		0A19BDAE2630926B00519D02 /* ListOfCompletedTasks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ListOfCompletedTasks.storyboard; path = ToDoist/Storyboards/ListOfCompletedTasks.storyboard; sourceTree = SOURCE_ROOT; };
 		1A54F4063D2163EDA2866D4F /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = file.gitattributes; path = .gitattributes; sourceTree = "<group>"; };
 		1A54FF7D98C28BC5275B813F /* NewTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		3A75AAFC26332D380024358A /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
 		3A826C192631AD23003AD208 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		3A826C1C2631AD38003AD208 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FA97C95F262E0DBA00F3B0E3 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				0447425E262D8B74001F7386 /* TasksDashboardViewController.swift */,
 				1A54FF7D98C28BC5275B813F /* NewTaskViewController.swift */,
 				3A826C1C2631AD38003AD208 /* LoginViewController.swift */,
+				3A75AAFC26332D380024358A /* AddUserViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A75AAFD26332D380024358A /* AddUserViewController.swift in Sources */,
 				3A826C1D2631AD38003AD208 /* LoginViewController.swift in Sources */,
 				0447425F262D8B74001F7386 /* TasksDashboardViewController.swift in Sources */,
 				04B78F20262DABF400BF2D6C /* TaskCollectionViewCell.swift in Sources */,

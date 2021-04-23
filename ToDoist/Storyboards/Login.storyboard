@@ -63,15 +63,19 @@
                             <constraint firstItem="UWN-Jf-9Gm" firstAttribute="top" secondItem="8Wj-L2-FeN" secondAttribute="top" constant="160" id="tOL-nR-Cqx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userNameTF" destination="OKZ-jm-WXI" id="rsv-Rp-6WN"/>
+                        <outlet property="userPasswordTF" destination="eLD-Yo-0Vb" id="TwM-iU-PnZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8RH-rk-pCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="252.17391304347828" y="184.82142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--AddUserView Controller-->
         <scene sceneID="zuT-sm-XYv">
             <objects>
-                <viewController id="l0F-2U-eDy" sceneMemberID="viewController">
+                <viewController id="l0F-2U-eDy" userLabel="AddUserView Controller" customClass="AddUserViewController" customModule="ToDoist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lwd-FA-B4T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
