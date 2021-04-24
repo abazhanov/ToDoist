@@ -8,6 +8,8 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    var user = TaskDataManager.self
 
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var userPasswordTF: UITextField!
